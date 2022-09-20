@@ -25,8 +25,8 @@ def recommend(movie):
 
     return recommended_movies, recommended_movies_poster
 
-
-movie_dict = pickle.load(open("movies_dict.pkl",'rb'))
+flle = open("movies_dict.pkl",'rb')
+movie_dict = pickle.load(file)
 
 movies = pd.DataFrame(movie_dict)
 
